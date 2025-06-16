@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+/* ========================
+   INDEX PAGE STYLES
+======================== */
+
+
+/* Set basic font & background */
+.index-body {
+  background-color: black;
+  color: white;
+  line-height: 1.5;
+  margin: 0;
+  /* background-color: #282a35; */
+
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 1fr; /* 2 columns: 200px sidebar + rest */
+  grid-template-rows: auto 1fr auto; /* rows: header, content, footer */
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  height: 100vh;
+  gap: 10px;
+}
+
+.item1 { grid-area: header; background: lightblue; }
+.item2 { grid-area: sidebar; background: lightgray; }
+.item3 { grid-area: main; background: white; }
+.item4 { grid-area: footer; background: lightcoral; }
+
+.name-menu {
+    /* background-color: #45508f; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:0.5em;
+    align-items: center;
+    height: 15em;
+    font-family: 'Press Start 2P', cursive;
+    background-image: url(../images/space-background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.start-menu {
+    height: 20em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:0.5em;
+    align-items: center;
+
+}
+
+
+.line {
+  font-size: 1.8rem;
+  opacity: 0;
+  transition: opacity 1s ease;
+  height: 2.2em; 
+  text-align: center;
+  margin-top: 10px;
+}
+
+.visible {
+  opacity: 1;
+}
+
+/* ========================
+   Button from CSS BUTTONS
+======================== */
+/* Base button style — BLACK */
+
+.bn632-hover {
+  display: inline-block;
+  width: 160px;
+  height: 55px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  line-height: 55px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: black;
+  background-size: 300% 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Gradient on hover (optional) */
+.bn632-hover:hover:not(.clicked) {
+  filter: brightness(1.2);
+}
+
+/* Gradient ON CLICK */
+.bn632-hover.clicked {
+  background-image: linear-gradient(
+    to right,
+    #f5ce62,
+    #e43603,
+    #fa7199,
+    #e85a19
+  );
+  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+  background-color: transparent; /* remove the black */
+}
+
+.bn19{
+
+font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+/* ========================
+   SPANISH PAGE
+======================== */
+
+
+.spanish-body {
+  color: black;
+  line-height: 1.0;
+  margin: 0;
+  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-family: 'Press Start 2P', cursive;
+  height: 100vh;
+  padding: 0;
+  overflow: hidden; /* Hide body overflow */
+
+}
+
+
+.body-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: -1; /* Above the background */
+}
+
+.intro-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.side-container {
+  width: 15%; /* fixed width */
+  padding: 1rem;
+}
+
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none; /* para que no bloquee clics */
+}
+
+@keyframes moonSpin {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+
+.intro-moon {
+  position: absolute;
+  left: 50%;
+  bottom: -150px;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  background-image: url(../Images/moon2.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  pointer-events: none;
+  opacity: 0.82;
+  z-index: 2;
+  animation: moonSpin 60s ease-in-out infinite;
+
+}
+
+.intro-stext{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  color: white;
+  position: relative;
+}
+
+.intro-mtext {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  color: white;
+  margin: 100px;
+  position: relative;
+  z-index: 1;
+
+}
+
+
+.intro-content {
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* Makes it non-interactive */
+  z-index: 0;
+}
+
+/* Update the middle container styles */
+.middle-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+ /* Add this to ensure content stays above any decorative elements */
+}
+
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.snap-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+
+}
+
+.snap-section {
+  position: relative;
+  height: 100vh;
+  scroll-snap-align: start;
+}
