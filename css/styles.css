@@ -223,6 +223,7 @@ font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   color: white;
   margin: 100px;
+  margin-bottom: 10px;
   position: relative;
   z-index: 1;
 
@@ -242,6 +243,24 @@ font-family: 'Press Start 2P', cursive;
   pointer-events: none; /* Makes it non-interactive */
   z-index: 0;
 }
+
+.intro-img {
+  width: 4vh;
+}
+
+.intro-social{
+
+  display: flex;
+
+}
+
+.intro-social-icon {
+
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+
 
 /* Update the middle container styles */
 .middle-container {
@@ -295,3 +314,5 @@ font-family: 'Press Start 2P', cursive;
   color: white;
   margin: 100px;
 }
+
+
