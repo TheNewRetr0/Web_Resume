@@ -216,6 +216,8 @@ font-family: 'Press Start 2P', cursive;
   font-size: 1.5rem;
   color: white;
   position: relative;
+  text-align: center;
+
 }
 
 .intro-mtext {
@@ -226,6 +228,7 @@ font-family: 'Press Start 2P', cursive;
   margin-bottom: 10px;
   position: relative;
   z-index: 1;
+  text-align: center;
 
 }
 
@@ -270,13 +273,19 @@ font-family: 'Press Start 2P', cursive;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   box-sizing: border-box;
   text-align: center;
   overflow: hidden;
  /* Add this to ensure content stays above any decorative elements */
 }
 
+.middle-img {
+
+  width: 50%;
+  border-radius: 50%;
+
+}
 
 .main-container {
   display: flex;
@@ -303,9 +312,11 @@ font-family: 'Press Start 2P', cursive;
 
 .middle-mtext {
   font-family: 'Alef', cursive;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   margin: 100px;
+  text-align: center;
+
 }
 
 .middle-gtext {
@@ -313,6 +324,54 @@ font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   color: white;
   margin: 100px;
+  text-align: center;
+
 }
 
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .intro-stext {
+    text-align: center;
+    font-size: 3vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+  }
+
+  .intro-mtext {
+    text-align: center;
+    font-size: 5vh;
+    margin: 0;
+
+  }
+
+}
+/* Medium devices (tablets, 768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .intro-stext {
+    text-align: center;
+    font-size: 3vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+  }
+  .intro-mtext {
+    text-align: center;
+    font-size: 5vh;
+    margin: 0;
+  }
+
+
+}
+
+/* Large devices (desktops, 1024px - 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  /* Example: adjust grid sizes or margins */
+}
+
+/* Extra large devices (large desktops, 1280px and up) */
+@media (min-width: 1280px) {
+  /* Example: max out widths or enable full layout */
+}
 
