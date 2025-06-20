@@ -126,12 +126,9 @@ font-family: 'Press Start 2P', cursive;
 
 }
 
-/* ========================
-   SPANISH PAGE
-======================== */
 
 
-.spanish-body {
+.general-body {
   color: black;
   line-height: 1.0;
   margin: 0;
@@ -254,7 +251,9 @@ font-family: 'Press Start 2P', cursive;
 .intro-social{
 
   display: flex;
-
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .intro-social-icon {
@@ -278,6 +277,20 @@ font-family: 'Press Start 2P', cursive;
   text-align: center;
   overflow: hidden;
  /* Add this to ensure content stays above any decorative elements */
+}
+
+.middle-container-mobile {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+  /* Add this to ensure content stays above any decorative elements */
 }
 
 .middle-img {
@@ -309,12 +322,17 @@ font-family: 'Press Start 2P', cursive;
   scroll-snap-align: start;
 }
 
+.snap-section-desk {
+  position: relative;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
 
 .middle-mtext {
   font-family: 'Alef', cursive;
   font-size: 1.5rem;
   color: white;
-  margin: 100px;
   text-align: center;
 
 }
@@ -328,9 +346,47 @@ font-family: 'Press Start 2P', cursive;
 
 }
 
+.middle-gtext--mobile {
+
+  font-family: 'Prompt', cursive;
+  font-size: 3rem;
+  color: white;
+  margin: 100px;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+
+}
+
+.middle-mtext--mobile {
+  font-family: 'Alef', cursive;
+  font-size: 1.5rem;
+  color: white;
+  margin: 100px;
+  text-align: center;
+
+}
+
+.intro-social-mobile {
+
+  display: none;
 
 
-@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+.snap-section-mobile{
+
+display: none;
+
+}
+
+@media (max-width: 481px) {
 
   .intro-stext {
     text-align: center;
@@ -347,8 +403,125 @@ font-family: 'Press Start 2P', cursive;
   }
 
 }
+
+
+/*!* The side navigation menu *!*/
+/*.sidenav {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  justify-content: space-evenly;*/
+/*  height: 100%; !* 100% Full-height *!*/
+/*  width: 0; !* 0 width - change this with JavaScript *!*/
+/*  position: fixed; !* Stay in place *!*/
+/*  z-index: 1; !* Stay on top *!*/
+/*  top: 0; !* Stay at the top *!*/
+/*  left: 0;*/
+/*  background-color: #111; !* Black*!*/
+/*  overflow-x: hidden; !* Disable horizontal scroll *!*/
+/*  padding-top: 60px; !* Place content 60px from the top *!*/
+/*  transition: 0.5s; !* 0.5 second transition effect to slide in the sidenav *!*/
+/*}*/
+
+/*!* The navigation menu links *!*/
+/*.sidenav a {*/
+/*  text-decoration: none;*/
+/*  font-size: 25px;*/
+/*  color: #818181;*/
+/*  display: block;*/
+/*  transition: 0.3s;*/
+/*}*/
+
+/*!* When you mouse over the navigation links, change their color *!*/
+/*.sidenav a:hover {*/
+/*  color: #f1f1f1;*/
+/*}*/
+
+/*!* Position and style the close button (top right corner) *!*/
+/*.sidenav .closebtn {*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  right: 25px;*/
+/*  font-size: 36px;*/
+/*  margin-left: 50px;*/
+/*}*/
+
+
+
+/*MEDIA QUERIES*/
+
+
+/*Apparently SE PHONES ARE THIS SMALL , WTF APPLE??? */
+
+
+@media (max-width: 378px){
+
+  .intro-mtext{
+
+    margin: 0px;
+
+  }
+
+  .middle-mtext {
+    font-size: 1.35rem;
+    margin: 2vh;
+
+  }
+
+}
+
+
+/*At this point, what even could be this???*/
+
+@media (min-width: 379px) and  (max-width: 548px) {
+
+  .intro-mtext{
+
+margin: 0px;
+
+  }
+
+  .middle-mtext {
+    font-size: 1.5rem;
+    margin: 0px;
+
+  }
+
+}
+
+
+
+/*PHONES*/
+@media (min-width: 549px) and (max-width: 756px) {
+
+  .intro-stext {
+    text-align: center;
+    font-size: 3vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+  }
+
+  .intro-mtext {
+    text-align: center;
+    font-size: 5vh;
+    margin: 0;
+
+  }
+
+  .middle-mtext {
+    font-size: 1.65rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 2vh;
+    margin-right: 2vh;
+  }
+
+
+}
+
+
 /* Medium devices (tablets, 768px - 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 757px) and (max-width: 1085px) {
 
   .intro-stext {
     text-align: center;
@@ -362,16 +535,123 @@ font-family: 'Press Start 2P', cursive;
     margin: 0;
   }
 
+ .middle-img{
+
+   width: 25%;
+
+ }
+
+  .middle-mtext {
+
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    font-size: 2rem;
+
+  }
+
+  .middle-gtext {
+
+    padding-top: 20vh;
+
+  }
 
 }
 
-/* Large devices (desktops, 1024px - 1279px) */
-@media (min-width: 1024px) and (max-width: 1279px) {
-  /* Example: adjust grid sizes or margins */
+/* THIS PIECE OF SHIT CODE ONLY MAKES IT SO LESS THAN 1023 DISPLAY MOBILE (IT BROKE EVERYTHING FFS) */
+
+/*NVM It was my fault, a typo. ffs took about 20 minutes to solve*/
+
+@media (max-width: 1085px) {
+  .intro-social {
+    display: none;
+  }
+
+  .intro-social-mobile {
+    display: flex;
+  }
+  .intro-img{
+
+    width: 10vh;
+  }
+  .intro-social-mobile{
+
+    margin-bottom: 2vh;
+
+  }
+
+  .intro-mtext {
+
+    z-index: 0;
+
+  }
+
+  .snap-section-desk {
+
+    display: none;
+
+  }
+
+  .snap-section-mobile{
+    display: block;
+    position: relative;
+    height: 100vh;
+    scroll-snap-align: start;
+
+  }
+
+
+
+  .middle-gtext {
+
+    font-size: 2.5rem;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+
+  }
+
+
+
+  .middle-img{
+    width: 25%;
+
+  }
+
+
+
 }
 
-/* Extra large devices (large desktops, 1280px and up) */
+
+/*DESKTOP*/
+
+@media (min-width: 1186px) and (max-width: 1279px) {
+  .intro-social {
+    display: flex;
+  }
+
+.middle-mtext{
+
+  margin: 10vh;
+
+}
+
+}
+/* BIG DESKTOP*/
+
 @media (min-width: 1280px) {
-  /* Example: max out widths or enable full layout */
+  .intro-social {
+    display: flex;
+  }
+  .middle-mtext{
+
+    margin: 10vh;
+
+  }
+
 }
 
