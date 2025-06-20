@@ -3,9 +3,8 @@
 <head>
     <link rel="stylesheet" href="css/styles.css"/>
     <meta charset="UTF-8" />
-    <title>Spanish Resume</title>
+    <title>English Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
 <body class="general-body">
 <div id="particles-js"></div>
@@ -14,19 +13,16 @@
     <!-- Intro Section -->
     <section class="snap-section">
         <div class="intro-container" id="intro-section">
-            <h1 class="intro-mtext">Oscar Luna</h1>
-            <div class="intro-social">
-
-
+            <div class="intro-social-mobile">
                 <div class="intro-social-icon" onclick="copyEmail()" style="cursor: pointer;">
                     <img class="intro-img" src="../images/gmail.png" alt="Gmail logo">
                 </div>
-                <span id="copyMessage" style="display:none; color:green; font-size: 14px;">📋 Copied to clipboard!	</span>
+                <span id="copyMessage" style="display:none; color:green; font-size: 14px;">📋 Copied to clipboard!</span>
 
                 <div class="intro-social-icon" onclick="copyPhone()" style="cursor: pointer;">
                     <img class="intro-img" src="../images/number.png" alt="WhatsApp logo">
                 </div>
-                <span id="phoneMessage" style="display:none; color:green; font-size: 14px;">📋 Copied to clipboard!	</span>
+                <span id="phoneMessage" style="display:none; color:green; font-size: 14px;">📋 Copied to clipboard!</span>
 
                 <a class="intro-social-icon" href="https://www.linkedin.com/in/oscar-luna-a5998a296" target="_blank" rel="noopener">
                     <img class="intro-img" src="../images/linkedin.png" alt="LinkedIn logo">
@@ -35,44 +31,75 @@
                 <a class="intro-social-icon" href="../CV.pdf" target="_blank" rel="noopener">
                     <img class="intro-img" src="../images/pdf.png" alt="CV PDF logo">
                 </a>
-
             </div>
-            <p class="intro-stext">This webpage is still a work in progress (I haven't added media queries)</p>
-            <p class="intro-stext">Mechatronic engineer student</p>
-            <p class="intro-stext">Technical High School Graduate specialized in Programming</p>
+            <h1 class="intro-mtext">Oscar Luna</h1>
+            <div class="intro-social">
+                <div class="intro-social-icon" onclick="copyEmail()" style="cursor: pointer;">
+                    <img class="intro-img" src="../images/gmail.png" alt="Gmail logo">
+                </div>
+                <span id="copyMessage" style="display:none; color:green; font-size: 14px;">📋 Copied to clipboard!</span>
+
+                <div class="intro-social-icon" onclick="copyPhone()" style="cursor: pointer;">
+                    <img class="intro-img" src="../images/number.png" alt="WhatsApp logo">
+                </div>
+                <span id="phoneMessage" style="display:none; color:green; font-size: 14px;">📋 Copied to clipboard!</span>
+
+                <a class="intro-social-icon" href="https://www.linkedin.com/in/oscar-luna-a5998a296" target="_blank" rel="noopener">
+                    <img class="intro-img" src="../images/linkedin.png" alt="LinkedIn logo">
+                </a>
+
+                <a class="intro-social-icon" href="../CV.pdf" target="_blank" rel="noopener">
+                    <img class="intro-img" src="../images/pdf.png" alt="CV PDF logo">
+                </a>
+            </div>
+            <p class="intro-stext">Mechatronics Engineering student</p>
+            <p class="intro-stext">Programming Technician</p>
             <div class="intro-moon"></div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="snap-section">
-
+    <!-- DESKTOP About Section -->
+    <section class="snap-section-desk">
         <div class="middle-container" id="snap-section">
-
-
             <div class="middle-img-wrapper">
-
                 <img class="middle-img" src="../Images/MEMEME.jpg">
-
             </div>
-
             <div class="middle-text">
-
                 <p class="middle-gtext">Who am I?</p>
-
                 <p class="middle-mtext">
                     Hello, I'm Oscar Luna.<br><br>
-                    I'm a Mechatronic Engineering student and a Technical High School graduate specialized in Programming, with knowledge in tech support, hardware installation, networking, and preventive maintenance.<br><br>
-                    I'm passionate about technology and continuous learning, which is why I'm currently pursuing certifications and self-taught education alongside my college studies in Mechatronic Engineering.<br><br>
-                    I've worked as an assistant in systems and technical services departments, providing user support, installing over 50 devices, and offering troubleshooting assistance. I'm currently expanding my professional portfolio with specialized courses and hands-on experience.<br><br>
-                    I'm seeking opportunities that allow me to keep growing professionally, apply my skills, and continue learning.
+                    I’m a Mechatronics Engineering student and a graduate of a technical high school with a specialization in Programming. I have knowledge in technical support, hardware installation, preventive maintenance, and some experience with HTML, CSS, JS, and C#.<br><br>
+                    I'm passionate about technology and continuous learning, so I'm currently pursuing certifications and self-teaching in parallel with my university studies in Mechatronics Engineering.<br><br>
+                    I’ve worked as an assistant in IT and technical services departments, providing user support, installing over 50 devices, and solving technical issues. I’m currently expanding my professional portfolio through specialized courses and hands-on experience.<br><br>
+                    I’m seeking opportunities that will allow me to continue growing professionally, applying my knowledge, and keeping on learning.
                 </p>
-
             </div>
-
-
         </div>
+    </section>
 
+    <!-- MOBILE About Section -->
+    <section class="snap-section-mobile">
+        <div class="middle-container-mobile">
+            <p class="middle-gtext">Who am I?</p>
+            <p class="middle-mtext">
+                Hello, I'm Oscar Luna.<br><br>
+                I’m a Mechatronics Engineering student and a graduate of a technical high school with a specialization in Programming. I have knowledge in technical support, hardware installation, preventive maintenance, and some experience with HTML, CSS, JS, and C#.<br><br>
+            </p>
+            <div class="middle-img-wrapper">
+                <img class="middle-img" src="../Images/MEMEME.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section class="snap-section-mobile">
+        <div class="middle-container-mobile">
+            <p class="middle-gtext--mobile">More about me...</p>
+            <p class="middle-mtext">
+                I’m passionate about technology and continuous learning, so I’m currently pursuing certifications and self-teaching in parallel with my university studies in Mechatronics Engineering.<br><br>
+                I’ve worked as an assistant in IT and technical services departments, providing user support, installing over 50 devices, and solving technical issues. I’m currently expanding my professional portfolio through specialized courses and hands-on experience.<br><br>
+                I’m seeking opportunities that will allow me to continue growing professionally, applying my knowledge, and keeping on learning.
+            </p>
+        </div>
     </section>
 </div>
 

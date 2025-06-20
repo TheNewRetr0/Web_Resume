@@ -629,28 +629,40 @@ margin: 0px;
 
 /*DESKTOP*/
 
-@media (min-width: 1186px) and (max-width: 1279px) {
+@media (min-width: 1186px){
+  .intro-social {
+    display: flex;
+  }
+
+  .middle-mtext{
+
+    margin: 5vh;
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (min-width: 1279px){
   .intro-social {
     display: flex;
   }
 
 .middle-mtext{
 
-  margin: 10vh;
-
+  margin: 5vh;
+  font-size: 1.7rem;
 }
 
 }
 /* BIG DESKTOP*/
 
-@media (min-width: 1280px) {
+@media (min-width: 1765px) {
   .intro-social {
     display: flex;
   }
   .middle-mtext{
-
-    margin: 10vh;
-
+    margin: 5svh;
+    font-size: 2rem;
   }
 
 }
